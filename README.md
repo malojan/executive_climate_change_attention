@@ -2,9 +2,10 @@
 
 Repository for the construction of the Executive Climate Change Attention indicator introduced in the [paper](https://doi.org/10.1162/glep.a.1), "Executive Climate Change Attention: Toward an Indicator of Comparative Climate Change Attention," published in *Global Environmental Politics*. The indicator, available in the `data` folder, tracks the salience of climate change in executive speeches at the United Nations General Assembly (UNGA) and measured through the fine-tuning of a transformer model. It covers 195 countries from 1980 to 2024.
 
+**Model**
 
-
-
+The model used to generate the indicator is a fine-tuned version of [`deberta-v3-base`](https://huggingface.co/microsoft/deberta-v3-base)
+, designed to classify UNGA speeches as either "climate change" or "not climate change." This classification is based on a sample of approximately 5,000 UNGA sentences annotated by the authors to identify explicit references to climate change. The model is available for inference on [HuggingFace](https://huggingface.co/mljn/unga-climate-classifier).
 
 **Citation**
 
