@@ -127,15 +127,19 @@ climate_texts <- climate_text |>
     ecca_probability = probability
   )
 
-write_rds(climate_texts, "data/unga_texts_with_ecca.rds")
+write_parquet(climate_texts, "data/unga_texts_with_ecca.parquet")
 
 speeches_climate |> 
   filter(!is.na(region)) |> 
   group_by(year, region) |>
   summarise(ecca_share = mean(ecca_share, na.rm = TRUE)) |>
-  ggplot(aes(x = year, y = ecca_share, color = region)) +
-  geom_line() +
-  geom_point() +
+  ggplot(aes(x = year, y = ecca_share)) +
+  geom_line(size = 1, color = "darkgreen") +
+  geom_point(size = 1, color = "darkgreen") +
   theme_light() +
-  facet_wrap(~region)
-
+  facet_wrap(~region, nrow = 2) +
+  labs(
+    x = "Year",
+    y = "Executive Climate Change Attention (%)"
+  ) 
+ggsave("figures/ecca_share_by_region.png", width = 10, height = 6)

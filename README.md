@@ -5,7 +5,7 @@ Repository for the construction of the Executive Climate Change Attention indica
 **Model**
 
 The model used to generate the indicator is a fine-tuned version of [`deberta-v3-base`](https://huggingface.co/microsoft/deberta-v3-base)
-, designed to classify UNGA speeches as either "climate change" or "not climate change." This classification is based on a sample of approximately 5,000 UNGA sentences annotated by the authors to identify explicit references to climate change. The model is available for inference on [HuggingFace](https://huggingface.co/mljn/unga-climate-classifier).
+, designed to classify UNGA speeches as either "climate change" or "not climate change." This classification is based on a sample of approximately 5,000 UNGA sentences annotated by the authors to identify explicit references to climate change. The model is available for inference on [HuggingFace](https://huggingface.co/mljn/unga-climate-classifier). More information of the model training can be found in the supplementary material of the paper.
 
 **Citation**
 
