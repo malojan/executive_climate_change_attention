@@ -4,5 +4,4 @@
 .Ruserdata
 .DS_Store
 raw_data/
-**parquet
 .tmp.driveupload/

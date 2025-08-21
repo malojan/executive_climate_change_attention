@@ -1,6 +1,6 @@
 
 ## This script combines the raw text of the UNGA corpus 
-## that was downloaded at the following link : 
+## that was downloaded at the following link in the raw_data/unga_raw_text folder : 
 ## https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/0TJX8Y
 
 # Import packages 
@@ -28,10 +28,10 @@ extract_speeches <- function(x) {
 }
 
 speeches <- map_df(files, extract_speeches, .progress = TRUE) |> 
-  left_join(speakers)
+  left_join(speakers) |> 
+  filter(year >= 1975)
 
 # Save speeches
 
 arrow::write_parquet(speeches, "data/un_speeches.parquet")
-
 
