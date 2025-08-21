@@ -2,7 +2,7 @@
 
 Repository for the construction of the Executive Climate Change Attention indicator introduced in the [paper](https://doi.org/10.1162/glep.a.1), "Executive Climate Change Attention: Toward an Indicator of Comparative Climate Change Attention," published in *Global Environmental Politics*. The indicator, available in the `data` folder, tracks the salience of climate change in executive speeches at the United Nations General Assembly (UNGA) and measured through the fine-tuning of a transformer model. It covers 195 countries from 1980 to 2024.
 
-![Executive Climate Change Attention by region](figures/unga_climate_attention.png)![](figures/ecca_share_by_region.png)
+![Executive Climate Change Attention by region](figures/ecca_share_by_region.png)
 
 **Model**
 
