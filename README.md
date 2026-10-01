@@ -1,6 +1,6 @@
 # Executive Climate Change Attention
 
-Repository for the construction of the Executive Climate Change Attention indicator introduced in the [paper](https://doi.org/10.1162/glep.a.1), "Executive Climate Change Attention: Toward an Indicator of Comparative Climate Change Attention," published in *Global Environmental Politics*. The indicator, available in the `data` folder, tracks the salience of climate change in executive speeches at the United Nations General Assembly (UNGA) and measured through the fine-tuning of a transformer model. It covers 195 countries from 1980 to 2024.
+Repository for the construction of the Executive Climate Change Attention indicator introduced in the [paper](https://doi.org/10.1162/glep.a.1), "Executive Climate Change Attention: Toward an Indicator of Comparative Climate Change Attention," published in *Global Environmental Politics*. The indicator, available in the `data` folder, tracks the salience of climate change in executive speeches at the United Nations General Assembly (UNGA) and measured through the fine-tuning of a transformer model. It covers 195 countries from 1985 to 2024.
 
 ![Animated world map of Executive Climate Change Attention, 1985–2024](figures/ecca_map_animated.gif)
 
@@ -15,7 +15,7 @@ The model used to generate the indicator is a fine-tuned version of [`deberta-v3
 
 **Citation**
 
-Emiliano Grossman, Malo Jan; Executive Climate Change Attention: Toward an Indicator of Comparative Climate Change Attention. Global Environmental Politics 2025; doi: https://doi-org.scpo.idm.oclc.org/10.1162/glep.a.1
+Emiliano Grossman, Malo Jan; Executive Climate Change Attention: Toward an Indicator of Comparative Climate Change Attention. Global Environmental Politics 2025; doi: https://doi.org/10.1162/glep.a.1
 
 ```{bibtex}
 @article{grossman2025executive,
